@@ -1,0 +1,82 @@
+@use "variable";
+@use "mixin";
+
+.main-card {
+  background: $color-white;
+  padding: 1.6rem 2.4rem;
+  border-radius: 1.2rem;
+  width: 100%;
+
+  h3.card-title {
+    font-weight: $font-weight-medium;
+    font-size: 2rem;
+    color: $color-primary;
+    margin-bottom: 1.6rem;
+    max-width: 90%;
+  }
+}
+.text-main-bold{
+  font-weight: 600;
+  font-size: $fs-3 ;
+
+}
+.text{
+  font-weight: $font-weight-medium;
+  font-size: $fs-2;
+
+}
+.date-picker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .text-picker {
+    line-height: 45px;
+    min-width: 103px;
+    margin: 0px;
+  }
+  .ant-picker {
+    border: none;
+    box-shadow: none;
+  }
+}
+.alta-calendar {
+  .ant-picker-input {
+    input {
+      display: none;
+    }
+  }
+}
+.cricle-charts {
+  .total{
+    font-size: $fs-5;
+    font-weight: $font-weight-bold;
+  }
+  .warp-piechart {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .piechart{
+    text-align: center;
+    width: 246px;
+  }
+}
+.--blue {
+  background: $color-box-blue;
+}
+.--organe {
+  background: $color-box-organe;
+}
+.warp-note {
+ 
+  .note {
+    display: flex;
+    .ticket {
+      margin-right: 8px;
+      height: 20px;
+      border-radius: 4px;
+      width: 40px;
+      display: inline-block;
+    }
+  }
+}

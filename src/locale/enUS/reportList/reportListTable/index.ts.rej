@@ -1,0 +1,9 @@
+diff a/src/locale/enUS/reportList/reportListTable/index.ts b/src/locale/enUS/reportList/reportListTable/index.ts	(rejected hunks)
+@@ -63,6 +63,7 @@
+     "reportList.beatAuthor": "Author beat",
+     "reportList.beatSinger": "Singer beat",
+     "reportList.beatTag":"Tag beat",
++    "reportList.beatTotalCover": "Total cover beat",
+     "reportList.createAt": "Create at",
+ 
+   };

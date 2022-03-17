@@ -1,0 +1,10 @@
+diff a/src/locale/viVN/reportList/reportListTable/index.ts b/src/locale/viVN/reportList/reportListTable/index.ts	(rejected hunks)
+@@ -28,6 +28,7 @@
+     "reportList.beatAuthor": "Tác giả ca khúc",
+     "reportList.beatSinger": "Ca sĩ ca khúc",
+     "reportList.beatTag":"Thẻ ca khúc",
++    "reportList.beatTotalCover": "Tổng số lượt hát lại ca khúc",
+     "reportList.createAt": "Ngày tạo",
+   };
+   
+\ No newline at end of file

@@ -1,0 +1,68 @@
+@import "../styles/variable";
+.layout-introduce{
+    .header-introduce{
+        background-color: $color-primary-teacherpage;
+        height: 120px;
+        padding: 20px;
+        .title-introduce{
+            position: absolute;
+            width: 289px;
+            font-weight: 800;
+            font-family: 'Sigmar One', 'cursive';
+            font-style: normal;
+            line-height: 120%;
+            font-size: 26px;
+            /* or 48px */
+            text-transform: capitalize;
+            color: $color-primary-blue;
+        }
+        .button-navintro{
+            height: 8rem;
+            background: linear-gradient(180deg, #FFFFFF 26.33%, #E9E9E9 64.06%, #CFD0D0 109.97%);
+            border: 3.5px solid #FFFFFF;
+            box-shadow: 7px 8px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 16px;
+            margin: 0px 16px;
+            align-items: center;
+
+
+            .button-navintro:active {
+            background: linear-gradient(180deg, #F7DB79 0%, #FCF5D2 37.45%, #FEFCEE 57.91%, #F1DA7D 94.63%);
+            color: $color-active-button;
+            outline: none;
+            }
+
+           
+            .anticon-home{
+                color: $color-primary-blue;
+                font-size: 30px;
+                margin-left: 20px;
+            }
+            .text-default-button{
+                color: $color-default-button;
+                padding: 2px 24px;
+                font-family: 'Sigmar One', 'cursive';
+                font-size: 16px;
+    
+                margin: 0px 0px;
+            }
+        }
+
+    }
+    
+}
+.content-secsion-1{
+    position: absolute ;
+    font-family: 'Mali','cursive';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    .p-text-brown{
+        color:$color-text-brown
+    }
+    .p-text-pink{
+        color:$color-text-pink
+    }
+
+
+}

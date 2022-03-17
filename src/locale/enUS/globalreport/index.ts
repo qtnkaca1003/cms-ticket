@@ -1,0 +1,21 @@
+export default {
+  'globalReport.information': 'Information global report',
+  'globalReport.update': 'Update global report',
+  'globalReport.create': 'More new global report',
+  'globalReport.name': 'List and supplement global reports',
+  'globalReport.noReport': 'No',
+  'globalReport.nation': 'Nation',
+  'globalReport.nameField': 'Name field',
+  'globalReport.nameStudent': 'Student name',
+  'globalReport.topic': 'Topic',
+  'globalReport.dateCreate': 'Date created',
+  'globalReport.views': 'Views',
+  'globalReport.public': 'Comment',
+  'globalReport.action': 'Action',
+  'globalReport.Thai': 'Thailand',
+  'globalReport.VietNam': 'Viet Nam',
+  'globalReport.Indo': 'Indonesia',
+  'globalReport.image': 'Upload Image',
+  'globalReport.releasesetting': 'Release Setting',
+};
+  

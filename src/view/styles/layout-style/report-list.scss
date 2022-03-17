@@ -1,0 +1,18 @@
+.filter-date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &__to{
+        margin: 0;
+    }
+}
+
+.ant-picker{
+    width: 100%;
+    padding: 1.2rem 1.1rem;
+}
+
+.ant-select.select-custom.ant-select-single.ant-select-show-arrow{
+    min-width: 26rem;
+}

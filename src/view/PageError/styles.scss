@@ -1,0 +1,58 @@
+@import "../styles/variable.scss";
+@import "../styles/mixin.scss";
+
+
+.page-error {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../shared/assets/images/bg-main.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .label-logo-forgot {
+        width: 25%;
+        height: auto;
+        margin: 5rem 0;
+        max-width: 30rem;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .main-content {
+        max-width: 80rem;
+        text-align: center;
+
+
+
+        .title-404 {
+            font-weight: bold;
+            font-size: 7.2rem;
+        }
+
+        .page-not-found {
+            font-size: 2.4rem;
+            line-height: 2.9rem;
+            color: $color-main-text;
+            opacity: 0.8;
+        }
+
+        .note-404 {
+            margin-top: 2.4rem;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            color: $color-main-text;
+            opacity: 0.6;
+        }
+    }
+}
