@@ -2,7 +2,7 @@ import { IRouter } from '@routers/interface';
 import { UnorderedListOutlined } from '@ant-design/icons';
 import React from 'react';
 
-export const routerSticker: IRouter = {
+export const routerTicker: IRouter = {
   path: '/ticker',
   loader: import('./index'),
   exact: true,

@@ -29,15 +29,15 @@ const DateTimePicker = (props: IDateTimePicker) => {
       id={props.textLabel}
       onChange={onChange}
       showToday={true}
-      
+
       // onChange={(value) => props?.onChange(value)}
       value={value}
       format="DD/MM/YYYY"
       showTime
       suffixIcon={<Unicons.UilCalendarAlt size="27" className="icon-feather" />}
     >
-       
-        </DatePicker>
+
+    </DatePicker>
   );
 };
 

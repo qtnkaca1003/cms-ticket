@@ -1,0 +1,19 @@
+.ant-modal-content {
+    .ant-modal-header {
+        .ant-modal-title {
+            width: 100%;
+            text-align: center !important;
+        }
+    }
+    .ant-modal-body{
+        .ant-form{
+            .main{
+                .date{
+                    display: flex;
+                    justify-content: space-between;
+                  
+                }
+            }
+        }
+    }
+}

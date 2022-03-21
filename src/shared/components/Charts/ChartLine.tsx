@@ -4,7 +4,7 @@ import { Area } from '@ant-design/plots';
 
 
 const ChartsLine =()=>{
-    const [data, setData] = useState([]);
+   /*  const [data, setData] = useState([]);
 
   useEffect(() => {
     asyncFetch();
@@ -17,7 +17,37 @@ const ChartsLine =()=>{
       .catch((error) => {
         console.log('fetch data failed', error);
       });
-  };
+  }; */
+
+  const data =[
+    {
+      "timePeriod": "Thứ 2",
+      "value": 100
+    },
+    {
+      "timePeriod": "Thứ 3",
+      "value": 150
+    },
+    {
+      "timePeriod": "Thứ 4",
+      "value": 200
+    },
+    {
+      "timePeriod": "Thứ 5",
+      "value": 250
+    },
+    {
+      "timePeriod": "Thứ 6",
+      "value": 230
+    },
+    {
+      "timePeriod": "Thứ 7",
+      "value": 270
+    },
+    {
+      "timePeriod": "Chủ nhật",
+      "value": 150
+    }]
   const config = {
     data,
     xField: 'timePeriod',

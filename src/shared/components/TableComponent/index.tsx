@@ -282,7 +282,7 @@ const TableComponent: React.FC<IBEPaginationTable> = (
         }}
         {...props}
         className="main-table"
-        dataSource={repository?.value?.data || dataSource}
+        dataSource={/* repository?.value?.data ||  */dataSource}
         loading={props?.loading || repository?.status == 'loading'}
         pagination={props.pagination !== false && state.pagination}
         onChange={handleChangePage}

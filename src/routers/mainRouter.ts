@@ -1,7 +1,7 @@
 import { routerPageError } from '@view/PageError/router';
 import { routerHome } from '@view/Home/router';
 import { routerSetting } from '@view/Setting/router'
-import { routerSticker } from '@view/Ticker/router'
+import { routerTicker } from '@view/Ticker/router'
 import { routerCheckSticket } from '@view/Checktickets/router'
 import { routerViewProfile } from '@view/Profile/router';
 import { IRouter } from './interface';
@@ -23,7 +23,7 @@ export const publicPage: IRouter[] = [
   routerClasses,
   routerCheckSticket,
   routerSetting,
-  routerSticker,
+  routerTicker,
   routerSchoolRegister,
   routerViewProfile,
   routerPageError,

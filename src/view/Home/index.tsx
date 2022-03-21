@@ -21,7 +21,7 @@ const Home = () => {
     <div className="main-card">
       <MainTitleComponent title={"Thống kê"} />
       <div className='d-flex justify-content-md-between'>
-        <p className="secondary-title">Danh thu</p>
+        <p className="secondary-title">Doanh thu</p>
         <div className="date-picker">
           <p className="text-picker text ">
             Tháng {monthNow},{yearNow}
