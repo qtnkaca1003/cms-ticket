@@ -205,8 +205,8 @@ const Ticker = () => {
                     <div className="warp-search d-flex justify-content-md-between">
                         <SearchComponent placeholder={"Tìm bằng số vé..."} />
                         <div className="button ">
-                            <Button className="mr-2" onClick={showModal}  ><FilterOutlined />Lọc vé</Button>
-                            <Button >Xuất file (.svg)</Button>
+                            <Button  className="mr-2" onClick={showModal}  ><FilterOutlined />Lọc vé</Button>
+                            <Button  >Xuất file (.svg)</Button>
                         </div>
                     </div>
 

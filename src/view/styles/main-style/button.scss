@@ -1,5 +1,11 @@
 @use "variable";
 
+.ant-btn-default {
+  &:hover {
+    border: 1px solid $color-box-organe !important;
+    color: $color-text-orange !important;
+  }
+}
 .ant-btn,
 button.ant-btn.normal-button,
 .ant-modal-confirm-btns button.ant-btn,
@@ -13,17 +19,16 @@ button.ant-btn.cancel-button,
   font-size: $fs-2;
   padding: 0;
   transition: All 0.3s;
-  border: 1px solid $color-button-normal;
-
+  border: 1px solid $color-box-organe !important;
   background: $color-button-normal;
-  color: $color-button-cancel;
+  color: $color-text-orange;
 
-  &:hover {
+   &:hover {
     background: $color-button-cancel;
-    color: $color-button-normal;
-    border: 1px solid $color-button-normal;
+    border: 1px solid $color-box-organe !important;
+    color: $color-text-orange !important;
 
-  }
+  } 
 
   &:focus {
     outline: none;
@@ -31,7 +36,7 @@ button.ant-btn.cancel-button,
 }
 
 .delete-button {
-  border: 1px solid $color-button-normal;
+  border: 1px solid $color-button-normal !important;
   color: $color-button-cancel;
   color: $color-button-normal;
 }
@@ -45,8 +50,8 @@ button.ant-btn.disabled-button {
 }
 
 button.ant-btn.bg-custom-button {
-  background-color: $color-button-normal;
-  color: $color-button-cancel;
+  background-color: $color-button-normal !important;
+  color: $color-button-cancel!important;
 
   &:hover {
     opacity: 0.8;
@@ -63,11 +68,12 @@ button.ant-btn.cancel-button,
 button.ant-btn.ant-btn-dangerous,
 .cancel-button {
   background: $color-button-cancel;
-  color: $color-button-normal;
+  color: $color-text-orange !important;
 
-  &:hover {
-    background: $color-button-normal;
-    color: $color-button-cancel;
+   &:hover {
+    border: 1px solid $color-box-organe !important;
+    color: $color-text-orange !important;
+   
   }
 
   &:focus {
@@ -79,21 +85,21 @@ button.ant-btn.ant-btn-dangerous,
   text-align: center;
 }
 
-.ant-modal-confirm .ant-modal-confirm-btns .ant-btn+.ant-btn {
+.ant-modal-confirm .ant-modal-confirm-btns .ant-btn + .ant-btn {
   background: $color-button-normal;
   color: $color-button-cancel;
 
   &:hover {
-    background: $color-button-cancel;
-    color: $color-button-normal;
-    border: 1px solid $color-button-normal;
+    border: 1px solid $color-box-organe !important;
+    color: $color-text-orange !important;
+   
   }
 }
 
 .modal-delete-confirm .ant-modal-content .ant-modal-body .ant-modal-confirm-btns button:first-child {
   &:hover {
-    background: $color-button-normal;
-    color: $color-button-cancel;
-    border: 1px solid $color-button-normal;
+    border: 1px solid $color-box-organe !important;
+    color: $color-text-orange !important;
+   
   }
 }

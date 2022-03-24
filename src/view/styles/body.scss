@@ -1,35 +1,35 @@
 @import "./variable";
 @import "./mixin";
 @font-face {
-  font-family: "Mali";
+  font-family: "Montserrat";
   font-weight: normal;
   font-display: swap;
-  src: local("Mali Regular"), local("Mali-Regular"),
-    url("../../shared/assets/font/Mali/Mali-Regular.ttf") format("truetype");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../../shared/assets/font/Montserrat/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Mali";
+  font-family: "Montserrat";
   font-weight: bold;
   font-display: swap;
-  src: local("Mali Bold"), local("Mali-Bold"),
-    url("../../shared/assets/font/Mali/Mali-Bold.ttf") format("truetype");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../../shared/assets/font/Montserrat/Montserrat-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Mali";
+  font-family: "Montserrat";
   font-weight: 500;
   font-display: swap;
-  src: local("Mali Medium"), local("Mali-Medium"),
-    url("../../shared/assets/font/Mali/Mali-Medium.ttf") format("truetype");
+  src: local("Montserrat Medium"), local("Montserrat-Medium"),
+    url("../../shared/assets/font/Montserrat/Montserrat-Medium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Mali";
+  font-family: "Montserrat";
   font-weight: 300;
   font-display: swap;
-  src: local("Mali Light"), local("Mali-Light"),
-    url("../../shared/assets/font/Mali/Mali-Light.ttf") format("truetype");
+  src: local("Montserrat Light"), local("Montserrat-Light"),
+    url("../../shared/assets/font/Montserrat/Montserrat-Light.ttf") format("truetype");
 }
 
 html {

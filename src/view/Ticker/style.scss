@@ -1,19 +1,28 @@
-.ant-modal-content {
-    .ant-modal-header {
-        .ant-modal-title {
-            width: 100%;
-            text-align: center !important;
+.main-modal-filter {
+    .ant-modal-content {
+        .ant-modal-header {
+            .ant-modal-title {
+                width: 100%;
+                text-align: center !important;
+            }
         }
-    }
-    .ant-modal-body{
-        .ant-form{
-            .main{
-                .date{
-                    display: flex;
-                    justify-content: space-between;
-                  
+        .ant-modal-body {
+            .ant-form {
+                .main {
+                    .date {
+                        display: flex;
+                        
+                    }
                 }
             }
         }
     }
+}
+.text-modal {
+    color: #1e0d03;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.7;
 }

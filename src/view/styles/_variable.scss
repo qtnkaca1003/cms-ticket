@@ -6,13 +6,14 @@ $color-primary-blue: #0F6EB3;
 $color-default-button: #4D4A49;
 $color-active-button: #835341;
 $color-box-blue:  #4F75FF;
-$color-box-organe:  #FF8A48;
+$color-box-organe:  #FF993C;
 
 // COLOR TEXT
 $color-white: #FFFFFF;
+$color-text-black: #1E0D03;
 $color-text-brown: #734737;
 $color-text-pink: #E65077;
-$color-text-orange: #E68112;
+$color-text-orange: #FF993C;
 $color-primary: #61C6E9;
 $color-primary-light: #61C6E988;
 $color-primary-dark: #46060e;
@@ -43,7 +44,7 @@ $color-item: #7B7979;
 $border-radius: 0.8rem;
 
 // FONT FAMILY
-$main-font: "Mali";
+$main-font: "Montserrat";
 
 // FONT WEIGHT
 $font-weight-normal: 400;
@@ -101,7 +102,7 @@ $color-table-background: $color-white;
 $color-table-background-even: $color-primary;
 $color-table-text: $color-black;
 $color-table-border: #c8c8c8;
-$color-table-head: $color-primary;
+$color-table-head: #F1F4F8;
 
 //--4. Form & Modal--
 $color-modal-label: $color-tertiary-dark;

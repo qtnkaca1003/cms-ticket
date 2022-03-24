@@ -44,7 +44,7 @@ const ModalFilter = ({ setIsModalVisible, isModalVisible }) => {
                 width={635}
                 footer={false}
                 title={'Lọc vé'}
-                className="main-modal"
+                className="main-modal-filter main-modal"
                 visible={isModalVisible}
                 destroyOnClose={true}
                 onOk={handleOk}
@@ -53,19 +53,19 @@ const ModalFilter = ({ setIsModalVisible, isModalVisible }) => {
             >
                 <Form>
                     <div className="main">
-                        <div className="date">
-                            <div className="startdate">
-                               <p>Từ ngày</p>
+                        <div className="date mb-3">
+                            <div className="startdate mr-xl-5">
+                               <p className="text-modal mb-1">Từ ngày</p>
                                <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat} />
                             </div>
                             <div className="enddate">
-                               <p>Đến ngày</p>
+                               <p className="text-modal mb-1">Đến ngày</p>
                                <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat} />
                             </div>
 
                         </div>
                         <div className="radiobutton">
-                            <p>Tình trạng sử dụng</p>
+                            <p className="text-modal mb-1">Tình trạng sử dụng</p>
                             <Radio.Group >
                                 <Radio value={1}>Tất cả</Radio>
                                 <Radio value={2}>Đã sử dụng</Radio>
@@ -74,7 +74,7 @@ const ModalFilter = ({ setIsModalVisible, isModalVisible }) => {
                             </Radio.Group>
                         </div>
                         <div className="checkbox">
-                            <p>Cổng check - in</p>
+                            <p className="text-modal mb-1">Cổng check - in</p>
                             <Checkbox.Group style={{ width: '100%' }}>
                                 <Row gutter={[16, 16]} wrap={true}>
                                     <Col span={16}>

@@ -1,0 +1,87 @@
+.ant-modal-content {
+    .ant-modal-header {
+        .ant-modal-title {
+            width: 100%;
+            text-align: center !important;
+            color: #1e0d03;
+        }
+    }
+    .ant-modal-body {
+        .ant-form {
+            .warp{
+                .code_event{
+                   
+                    .ant-row{
+                        .ant-col{
+                            .ant-form-item-control-input{
+                                .ant-form-item-control-input-content{
+                                    .ant-input{
+                                        width: 245px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .name_event{
+                    width: 367px;
+                }
+            }
+            .ant-row {
+                .ant-col {
+                    .ant-form-item-control-input-content {
+                        .ant-input {
+                            width: 367px;
+                            height: 40px;
+                            border: 1px solid #a5a8b1;
+                            box-sizing: border-box;
+                            border-radius: 8px;
+                        }
+                        .ant-select{
+                            width: 176px;
+                            .ant-select-selector{
+                                height: 40px !important;
+                            }
+                        }
+                    }
+                    .ant-checkbox-wrapper{
+                        span{
+                            .ant-input{
+                                width: 148px;
+                                background-color: #F1F4F8;
+                            }
+                            .price-combo{
+                                width: 70px;
+                            }
+                        }
+                    }
+                }
+            }
+            .date {
+                width: 620px;
+                .ant-picker {
+                    width: 142px;
+                    height: 40px;
+                }
+            }
+            .button{
+                .delete{
+                    color: #FF993C;
+                }
+                .submit{
+                    background-color: #FF993C;
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+        
+    }
+}
+.text-modal {
+    color: #1e0d03;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.7;
+}
