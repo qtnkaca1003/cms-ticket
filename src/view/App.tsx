@@ -5,6 +5,7 @@ import { ConfigProvider } from 'antd';
 import '@shared/assets/css/bootstrap.min.css';
 import 'antd/dist/antd.css';
 import '@styles/styles.scss';
+import "react-datepicker/dist/react-datepicker.css";
 import '@ant-design/icons';
 import locale from '@locale/index';
 import { IntlProvider } from 'react-intl';

@@ -56,7 +56,9 @@ const ModalFilter = ({ setIsModalVisible, isModalVisible }) => {
                         <div className="date mb-3">
                             <div className="startdate mr-xl-5">
                                <p className="text-modal mb-1">Từ ngày</p>
-                               <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat} />
+                               <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat}
+                                renderExtraFooter ={()=><Radio />}
+                               />
                             </div>
                             <div className="enddate">
                                <p className="text-modal mb-1">Đến ngày</p>

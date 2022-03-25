@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import MainTitleComponent from '@shared/components/MainTitleComponent';
-import DateTimePicker from '@shared/components/DateTimePicker';
 import ChartsLine from '@shared/components/Charts/ChartLine';
 import { PieChart } from 'react-minimal-pie-chart';
+import DateTimePicker from '@shared/components/DatePicker';
+import Calenda from '@shared/components/Icon/calenda';
 const Home = () => {
-  const monthNow = new Date().getMonth() + 1;
-  const yearNow = new Date().getFullYear()
-  console.log(yearNow);
+  const date = new Date();
   const data = [
     { title: 'One', value: 56024, color: '#4F75FF' },
     { title: 'Two', value: 13568, color: '#FF8A48' },
@@ -17,16 +16,23 @@ const Home = () => {
     { title: 'Two', value: 13568, color: '#FF8A48' },
 
   ];
+  const CustomInput = forwardRef(({ value, onClick }, ref) => (
+    <>
+      <button className='button-datepicker' onClick={onClick} ref={ref}>
+        Tháng {value}  <Calenda />
+      </button>
+    </>
+
+
+
+  ));
   return <div className="home">
     <div className="main-card">
       <MainTitleComponent title={"Thống kê"} />
       <div className='d-flex justify-content-md-between'>
         <p className="secondary-title">Doanh thu</p>
-        <div className="date-picker">
-          <p className="text-picker text ">
-            Tháng {monthNow},{yearNow}
-          </p>
-          <DateTimePicker />
+        <div className="date-pickerd-flex align-self-center ">
+          <DateTimePicker value={date} dateFormat={"MM,yyyy"} custom={<CustomInput />} />
         </div>
       </div>
       <ChartsLine />
@@ -38,9 +44,9 @@ const Home = () => {
         <div className='warp-piechart'>
           <div className="date-picker ">
             <p className='text-picker text'>
-              Tháng {monthNow},{yearNow}
+
             </p>
-            <DateTimePicker />
+
 
           </div>
           <div className="piechart">
