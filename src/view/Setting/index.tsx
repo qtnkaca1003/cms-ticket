@@ -1,4 +1,4 @@
-import Edit from "@shared/components/Icon/edit";
+import Edit from "@shared/components/Icon/Edit";
 import MainTitleComponent from "@shared/components/MainTitleComponent";
 import SearchComponent from "@shared/components/SearchComponent";
 import TableComponent from "@shared/components/TableComponent";

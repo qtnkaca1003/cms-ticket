@@ -16,7 +16,7 @@ const SubItem: React.FC<IMenu> = (props: IMenu) => {
   const item = props.data;
   const history = useHistory();
   return (
-    <Menu mode='vertical' /* className="dropdown-3dot" */ >
+    <Menu mode='vertical' className="dropdown-3dot" >
       {item.routes!.length > 0 &&
         item.routes?.map((linkNav: IRouter, index) => {
           //console.log('linkNav:',linkNav);
@@ -77,9 +77,10 @@ const Item: React.FC<IMenu> = (props: IMenu) => {
                 id={item.name}
                 defaultMessage={item.name}
               />
+               <SubItem data={item} activePath={location.pathname} />
             </a>
           </span>
-          <SubItem data={item} activePath={location.pathname} />
+         <Dropdown overlay={<SubItem data={item} activePath={location.pathname} />}  ></Dropdown>
          
         </div>
       </div>

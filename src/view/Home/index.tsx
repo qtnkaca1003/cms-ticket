@@ -43,11 +43,7 @@ const Home = () => {
         </p>
         <div className='warp-piechart'>
           <div className="date-picker ">
-            <p className='text-picker text'>
-
-            </p>
-
-
+          <DateTimePicker value={date} dateFormat={"MM,yyyy"} custom={<CustomInput />} />
           </div>
           <div className="piechart">
             <p className='text-main-bold'>Gói gia đình</p>

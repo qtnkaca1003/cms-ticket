@@ -7,8 +7,8 @@ import { logo } from '@shared/assets/images';
 import { UilAngleRight } from '@iconscout/react-unicons';
 import MenuItem from './ItemMenu';
 import { HomeOutlined, SettingOutlined } from '@ant-design/icons';
-import Ticket from '@shared/components/Icon/ticket';
-import CheckTicket from '@shared/components/Icon/checking-ticket'
+import Ticket from '@shared/components/Icon/Ticket';
+import CheckTicket from '@shared/components/Icon/Checking-ticket'
 type navType = {
   path: string
   name?: string
