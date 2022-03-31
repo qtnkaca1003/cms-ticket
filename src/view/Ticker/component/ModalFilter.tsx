@@ -1,9 +1,11 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Modal from 'antd/lib/modal/Modal';
 import Form from "antd/lib/form";
 import { Button, Checkbox, Col, Radio, Row } from "antd";
 import { DatePicker, Space } from 'antd';
 import moment from 'moment';
+import DateTimePicker from "@shared/components/DatePicker";
+import Calenda from "@shared/components/Icon/Calenda";
 const CheckboxGroup = Checkbox.Group;
 
 
@@ -37,6 +39,14 @@ const ModalFilter = ({ setIsModalVisible, isModalVisible }) => {
 
         //setCheckAll(e.target.checked);
     };
+    const date = new Date();
+    const CustomInput = forwardRef(({ value, onClick }, ref) => (
+        <>
+            <button className='button-datepicker' onClick={onClick} ref={ref}>
+                Tháng {value}  <Calenda />
+            </button>
+        </>
+    ));
 
     return (
         <>
@@ -55,14 +65,12 @@ const ModalFilter = ({ setIsModalVisible, isModalVisible }) => {
                     <div className="main">
                         <div className="date mb-3">
                             <div className="startdate mr-xl-5">
-                               <p className="text-modal mb-1">Từ ngày</p>
-                               <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat}
-                                renderExtraFooter ={()=><Radio />}
-                               />
+                                <p className="text-modal mb-1">Từ ngày</p>
+                                <DateTimePicker value={date} dateFormat={"MM,yyyy"} custom={<CustomInput />} />
                             </div>
                             <div className="enddate">
-                               <p className="text-modal mb-1">Đến ngày</p>
-                               <DatePicker defaultValue={moment('2015/01/01', dateFormat)} format={dateFormat} />
+                                <p className="text-modal mb-1">Đến ngày</p>
+                                <DateTimePicker value={date} dateFormat={"MM,yyyy"} custom={<CustomInput />} />
                             </div>
 
                         </div>
@@ -94,10 +102,6 @@ const ModalFilter = ({ setIsModalVisible, isModalVisible }) => {
                             <Button onClick={() => { }}>Lọc</Button>
                         </div>
                     </div>
-
-
-
-
                 </Form>
             </Modal>
         </>

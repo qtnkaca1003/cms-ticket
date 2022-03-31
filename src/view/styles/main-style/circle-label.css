@@ -1,0 +1,39 @@
+@use "variable";
+.circle-label {
+  color: #03031D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle-label .circle-status {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.circle-label .circle-new {
+  background-color: #18e306;
+}
+
+.circle-label .circle-time-left {
+  background-color: #347aff;
+}
+
+.circle-label .circle-expired {
+  background-color: #878890;
+}
+
+.circle-label .circle-cancel {
+  background-color: #ff4747;
+}
+
+.circle-label .icon-disable {
+  color: #878890;
+  cursor: not-allowed;
+}
+/*# sourceMappingURL=circle-label.css.map */

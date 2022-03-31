@@ -29,7 +29,7 @@ export class HTTPRepository {
 
   constructor(baseURL?, rootStore?) {
     this.service = axios.create({
-      baseURL: baseURL || CONFIG.API_BASE_URL,
+      baseURL: CONFIG.API_BASE_URL ||CONFIG.API_LISTTICKET,
       withCredentials: false,
     });
     this.setStore(rootStore);

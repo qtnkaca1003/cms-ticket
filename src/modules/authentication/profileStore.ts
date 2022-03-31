@@ -1,7 +1,7 @@
 import {
   createAction,
   createSlice,
-  PayloadAction,
+  Store,
   Selector,
 } from '@reduxjs/toolkit';
 import User from '@modules/user/entity';

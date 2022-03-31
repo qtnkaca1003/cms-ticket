@@ -14,8 +14,10 @@ import {
 } from '@modules/authentication/profileStore';
 import { LanguageSelector } from '@modules/setting/settingStore';
 import PrivatePage from '@routers/component/PrivatePage';
+import getListTicket from '@modules/ticket/repository';
 
 const MainView = memo(({ statusLogin }: { statusLogin: boolean }) => {
+ 
   return (
     <>
       {statusLogin ? (

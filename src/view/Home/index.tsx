@@ -1,11 +1,33 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, useEffect } from 'react';
 import MainTitleComponent from '@shared/components/MainTitleComponent';
 import ChartsLine from '@shared/components/Charts/ChartLine';
 import { PieChart } from 'react-minimal-pie-chart';
+import ticketPresenter from '@modules/ticket/presenter'
 import DateTimePicker from '@shared/components/DatePicker';
-import Calenda from '@shared/components/Icon/calenda';
+import Calenda from '@shared/components/Icon/Calenda';
+import { useSingleAsync } from '@shared/hook/useAsync';
 const Home = () => {
-  const date = new Date();
+  const ticket = ticketPresenter;
+  console.log(ticket.getListTicket());
+  const { getListTicket } = ticketPresenter;
+  const getListTicketCall = useSingleAsync(getListTicket);
+  
+  useEffect(() => {
+    const onSubmitEmail = () => {
+      getListTicketCall?.execute()
+        .then((res) => {
+          console.log(res.data);
+          
+        })
+        .catch(() => {
+          //setErrorStatus(formatMessage('forgot.password.email.not.exit'));
+        });
+    };
+    onSubmitEmail();
+  }, [])
+
+
+
   const data = [
     { title: 'One', value: 56024, color: '#4F75FF' },
     { title: 'Two', value: 13568, color: '#FF8A48' },
@@ -16,15 +38,13 @@ const Home = () => {
     { title: 'Two', value: 13568, color: '#FF8A48' },
 
   ];
+  const date = new Date();
   const CustomInput = forwardRef(({ value, onClick }, ref) => (
     <>
       <button className='button-datepicker' onClick={onClick} ref={ref}>
         Tháng {value}  <Calenda />
       </button>
     </>
-
-
-
   ));
   return <div className="home">
     <div className="main-card">

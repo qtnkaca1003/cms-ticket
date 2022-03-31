@@ -1,0 +1,13 @@
+@use "variable";
+.ant-modal-confirm .ant-modal-body span.anticon.anticon-exclamation-circle {
+  display: none;
+}
+
+.ant-modal-confirm .ant-modal-body .anticon.ant-notification-notice-icon-error {
+  display: none;
+}
+
+.ant-notification .anticon-close-circle {
+  display: none;
+}
+/*# sourceMappingURL=modalConfirm.css.map */

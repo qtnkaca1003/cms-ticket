@@ -20,7 +20,6 @@ type dataType = {
     checkin: string
 }
 const Ticker = () => {
-
     const columns: ColumnsType = [
         {
             title: 'Booking code',
@@ -193,6 +192,7 @@ const Ticker = () => {
 
 
     ]
+    
     const [isVisible, setIsVisible] = useState(false);
     const showModal = () => {
         setIsVisible(true);

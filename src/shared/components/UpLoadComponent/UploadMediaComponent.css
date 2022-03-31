@@ -1,0 +1,86 @@
+.upload-component #input-media {
+  display: none;
+}
+
+.upload-component .wrap-image {
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  border: 3px solid #F6F6F6;
+}
+
+.upload-component .wrap-image .fas.fa-cloud-upload-alt {
+  color: #fff;
+}
+
+.upload-component .wrap-image:hover {
+  opacity: 0.7;
+}
+
+.upload-component .wrap-image:hover .open-modal {
+  z-index: 3;
+  opacity: 1;
+}
+
+.upload-component .wrap-image .open-modal {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.upload-component .wrap-image .lazyLoad-img img {
+  width: unset !important;
+  border-radius: 10px;
+}
+
+.ant-modal.modal-general.modal-media {
+  top: 20px !important;
+}
+
+.lazyload-wrapper {
+  height: 100% !important;
+}
+
+.list-media-to-choose {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.list-media-to-choose .wrap-list {
+  max-height: 700px;
+  overflow-y: auto;
+}
+
+.list-media-to-choose .item-image {
+  height: 161px !important;
+  width: 161px !important;
+  cursor: pointer;
+}
+
+.list-media-to-choose .item-image:hover {
+  border-radius: 10px;
+  border: 2px dashed dimgray;
+  opacity: 0.8;
+}
+
+.list-media-to-choose .item-image p {
+  margin: 0;
+  font-size: 12px;
+  -webkit-line-clamp: 2;
+  height: 36px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.list-media-to-choose .active {
+  border-radius: 10px;
+  border: 2px dashed dimgray;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=UploadMediaComponent.css.map */

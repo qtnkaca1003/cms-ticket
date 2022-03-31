@@ -9,13 +9,13 @@ import { Selector } from 'react-redux';
 
 const profile = createWhitelistFilter('profile', ['token', 'remember']);
 const settingStore = createWhitelistFilter('settingStore', ['language']);
-
+const ticket = createWhitelistFilter('ticket');
 const persistConfig:PersistConfig<RootState> = {
   key: CONFIG.APP_NAME,
   storage,
   blacklist: [],
-  transforms: [profile, settingStore],
-  whitelist: ['profile', 'settingStore'],
+  transforms: [profile, settingStore,ticket],
+  whitelist: ['profile', 'settingStore','ticket'],
 };
 
 const persistedReducer = persistReducer(persistConfig, appReducer);

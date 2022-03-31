@@ -18,6 +18,7 @@
                                     .ant-input{
                                         width: 245px;
                                     }
+                                    
                                 }
                             }
                         }
@@ -58,10 +59,26 @@
                 }
             }
             .date {
-                width: 620px;
+                width: 100%;
                 .ant-picker {
                     width: 142px;
                     height: 40px;
+                }
+                .dateS{
+                    .react-datepicker-wrapper{
+                        width: 142px;
+                        height: 40px;
+                        margin-right: 30px;
+                    }
+                    
+                }
+                .dateE{
+                    .react-datepicker-wrapper{
+                        width: 142px;
+                        height: 40px;
+                        margin-right: 30px;
+                    }
+                    
                 }
             }
             .button{
@@ -84,4 +101,5 @@
     font-size: 16px;
     line-height: 26px;
     opacity: 0.7;
+   
 }

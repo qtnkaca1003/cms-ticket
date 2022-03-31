@@ -1,0 +1,102 @@
+.react-datepicker {
+  font-size: 1em;
+}
+
+.react-datepicker .react-datepicker__month-container .react-datepicker__header {
+  padding-top: 0.8em;
+  background-color: #ffffff;
+}
+
+.react-datepicker .react-datepicker__month-container .react-datepicker__header .header-datepicker {
+  width: 182px;
+  height: 26px;
+}
+
+.react-datepicker .react-datepicker__month-container .react-datepicker__header .header-datepicker .btn-pre,
+.react-datepicker .react-datepicker__month-container .react-datepicker__header .header-datepicker .btn-next {
+  height: 26px;
+  border: none;
+}
+
+.react-datepicker .react-datepicker__month-container .react-datepicker__header .header-datepicker select {
+  height: 26px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.react-datepicker .react-datepicker__month-container .react-datepicker__header .react-datepicker__day-names .react-datepicker__day-name {
+  height: 28px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #c55e00;
+}
+
+.react-datepicker .react-datepicker__month-container .react-datepicker__header .datepicker-radio {
+  width: 100%;
+}
+
+.react-datepicker__month {
+  margin: 0.4em 1em;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+  width: 1.9em;
+  line-height: 1.9em;
+  margin: 0.166em;
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+
+.react-datepicker__current-month {
+  font-size: 1em;
+}
+
+.react-datepicker__navigation {
+  top: 1em;
+  line-height: 1.7em;
+  border: 0.45em solid transparent;
+}
+
+.react-datepicker__navigation--previous {
+  border-right-color: #ccc;
+  left: 1em;
+}
+
+.react-datepicker__navigation--next {
+  border-left-color: #ccc;
+  right: 1em;
+}
+
+.button-datepicker {
+  background: #ffffff;
+  border: 1px solid #e6e0e0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  width: 155px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.react-datepicker__day--selected {
+  background-color: #FFBA7B;
+  border-radius: 50%;
+}
+
+.react-datepicker__day:hover, .react-datepicker__month-text:hover, .react-datepicker__quarter-text:hover, .react-datepicker__year-text:hover {
+  background-color: #FFBA7B;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */

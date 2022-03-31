@@ -1,0 +1,10 @@
+.rightfilter .filter .filter-dateS .ant-picker {
+  width: initial !important;
+  margin-bottom: 2rem;
+}
+
+.rightfilter .filter .filter-dateE .ant-picker {
+  width: initial !important;
+  height: 40px;
+}
+/*# sourceMappingURL=style.css.map */

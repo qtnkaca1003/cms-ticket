@@ -5,7 +5,7 @@ import TableComponent from "@shared/components/TableComponent";
 import { Button, Tag } from "antd";
 import { ColumnsType } from "antd/lib/table";
 import React, { ReactNode, useState } from "react";
-import ModalAddTicket from "./component/ModalAddticket";
+import ModalAddTicket from "./component/ModalAddTicket";
 import ModalUpdate from "./component/ModalUpdate";
 
 type dataType = {

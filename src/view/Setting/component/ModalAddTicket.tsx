@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Modal from 'antd/lib/modal/Modal';
 import Form from "antd/lib/form";
 import { Button, Checkbox, Col, Radio, Row, Select, TimePicker } from "antd";
@@ -7,6 +7,8 @@ import moment from 'moment';
 import Input from "antd/lib/input/Input";
 const CheckboxGroup = Checkbox.Group;
 import '../style.scss';
+import DateTimePicker from "@shared/components/DatePicker";
+import Calenda from "@shared/components/Icon/Calenda";
 const { Option } = Select;
 const ModalAddTicket = ({ setIsModalVisible, isModalVisible }) => {
     const plainOptions = ['Cổng 1', 'Cổng 2', 'Cổng 3', 'Cổng 4', 'Cổng 5',];
@@ -22,8 +24,6 @@ const ModalAddTicket = ({ setIsModalVisible, isModalVisible }) => {
     };
     const onChange = list => {
         setCheckedList(list);
-        //setIndeterminate(!!list.length && list.length < plainOptions.length);
-        //setCheckAll(list.length === plainOptions.length);
     };
     const dateFormat = 'YYYY/MM/DD';
     const onCheckAllChange = e => {
@@ -36,8 +36,15 @@ const ModalAddTicket = ({ setIsModalVisible, isModalVisible }) => {
             setDisabledkAll(true)
         }
 
-        //setCheckAll(e.target.checked);
     };
+    const date = new Date();
+    const CustomInput = forwardRef(({ value, onClick }, ref) => (
+        <>
+            <button className='button-datepicker' onClick={onClick} ref={ref}>
+                Tháng {value}  <Calenda />
+            </button>
+        </>
+    ));
 
     return (
         <>
@@ -63,15 +70,15 @@ const ModalAddTicket = ({ setIsModalVisible, isModalVisible }) => {
                         <Input width={'367px'} placeholder="Nhập tên gói vé" />
                     </Form.Item>
                     <Form.Item>
-                        <div className="date d-flex ">
+                        <div className="date d-flex justify-content-md-between ">
                             <div className="dateS mr-5">
                                 <p className="text-modal mb-2">Ngày áp dụng</p>
-                                <DatePicker placeholder="dd/mm/yy" className="mr-3" />
+                                <DateTimePicker value={date} dateFormat={"MM,yyyy"} custom={<CustomInput />} />
                                 <TimePicker placeholder="hh:mm:ss" />
                             </div>
                             <div className="dateE">
                                 <p className="text-modal mb-2">Ngày hết hạn</p>
-                                <DatePicker placeholder="dd/mm/yy" className="mr-3" />
+                                <DateTimePicker value={date} dateFormat={"MM,yyyy"} custom={<CustomInput />} />
                                 <TimePicker placeholder="hh:mm:ss" />
                             </div>
 
@@ -93,8 +100,8 @@ const ModalAddTicket = ({ setIsModalVisible, isModalVisible }) => {
                             <Option value="Đang áp dụng">Đang áp dụng</Option>
                             <Option value="Tắt">Tắt</Option>
                         </Select>
-                        <p style={{fontStyle: "italic"}} >
-                            <span style={{color:'#FD5959'}}>*</span> là thông tin bắt buộc
+                        <p style={{ fontStyle: "italic" }} >
+                            <span style={{ color: '#FD5959' }}>*</span> là thông tin bắt buộc
                         </p>
                     </Form.Item>
                     <div className="button text-center mb-5">
